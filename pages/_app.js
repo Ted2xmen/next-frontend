@@ -11,6 +11,7 @@ const Container = styled.div`
 const MainContent = styled.div`
   background-color: #6a8c20;
   width: 100%;
+
 `;
 
 function MyApp({ Component, pageProps }) {

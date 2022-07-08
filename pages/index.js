@@ -4,7 +4,7 @@ import groq from "groq";
 import styled from 'styled-components'
 import GridContainer from "../components/Grid/GridContainer";
 
-export async function getStaticProps({ preview = false }) {
+export async function getServerSideProps({ preview = false }) {
   const bookmark = await getClient(preview).fetch(groq`
     *[_type == 'bookmark']
   `);
