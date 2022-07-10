@@ -3,9 +3,13 @@ import Card from './Card';
 import styled from 'styled-components'
 
 const Container = styled.div`
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    display: flex;
+    padding: 30px;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
 
 `
 

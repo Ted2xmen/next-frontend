@@ -4,9 +4,11 @@ import Link from "next/link";
 
 const SidebarContainer = styled.ul`
   padding-top: 30px;
+  padding-left: 20px;
   display: flex;
   flex-direction: column;
-`;
+  
+  `;
 
 const Li = styled.li`
   padding: 10px;

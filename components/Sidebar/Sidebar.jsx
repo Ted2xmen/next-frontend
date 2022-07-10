@@ -6,8 +6,8 @@ const SidebarContainer = styled.div`
   background-color: #2d3340;
   color: #d7f205;
   border: 1px solid #010440;
-  width: 250px;
-  height: 100vh;
+  width: 220px;
+  height: 1900px; // later: need to set this to the height of the page
 `;
 
 const Sidebar = () => {

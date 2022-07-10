@@ -11,15 +11,21 @@ const Container = styled.div`
 const MainContent = styled.div`
   background-color: #6a8c20;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 
 `;
+
+
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
       <Navbar />
       <Container>
-        <Sidebar />  
+          <Sidebar />
+
         <MainContent>
           <Component {...pageProps} />
         </MainContent>

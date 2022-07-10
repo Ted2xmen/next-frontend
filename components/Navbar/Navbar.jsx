@@ -5,11 +5,13 @@ import NavItems from "./NavItems";
 const NavbarContainer = styled.div`
   background-color: #2d3340;
   display: flex;
+  align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  height: 70px;
-  padding-left: 50px;
+  height: 60px;
+  padding-left: 30px;
   h2 {
+    
     color: #d7f205;
   }
 `;
