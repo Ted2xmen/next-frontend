@@ -1,20 +1,25 @@
-import React from 'react'
-import styled from 'styled-components'
-import Link from 'next/link'
-
+import React from "react";
+import styled from "styled-components";
+import Link from "next/link";
 
 const SidebarContainer = styled.ul`
-    padding-top: 30px;
-    display: flex;
-    flex-direction: column;
-`
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+`;
 
 const Li = styled.li`
-    padding: 10px;
-    font-size: 1rem;
-    list-style: none;
-    cursor: pointer;
-`
+  padding: 10px;
+  font-size: 1rem;
+  list-style: none;
+  cursor: pointer;
+  &:hover {
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    margin-right: 0.5rem;
+  }
+`;
 
 const SidebarItems = () => {
   return (
@@ -30,6 +35,6 @@ const SidebarItems = () => {
       </Link>
     </SidebarContainer>
   );
-}
+};
 
-export default SidebarItems
+export default SidebarItems;
