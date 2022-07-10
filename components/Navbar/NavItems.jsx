@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Link from "next/link";
+import { categoryData } from "../../menuData";
 
 const NavContainer = styled.ul`
   display: flex;
@@ -20,12 +21,13 @@ const NavItems = () => {
   return (
     <>
       <NavContainer>
-        <Link href="/">
-          <ListContainer>Home</ListContainer>
-        </Link>
-        <Link href="about">
-          <ListContainer>About</ListContainer>
-        </Link>
+        {categoryData.map((item) => {
+          return (
+            <Link href={item.url}>
+              <ListContainer> {item.name} </ListContainer>
+            </Link>
+          );
+        })}
       </NavContainer>
     </>
   );

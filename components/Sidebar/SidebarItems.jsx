@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import Link from "next/link";
+import { sidebarData } from "../../menuData";
 
 const SidebarContainer = styled.ul`
   padding-top: 30px;
   padding-left: 20px;
   display: flex;
   flex-direction: column;
-  
-  `;
+`;
 
 const Li = styled.li`
   padding: 10px;
@@ -26,15 +26,13 @@ const Li = styled.li`
 const SidebarItems = () => {
   return (
     <SidebarContainer>
-      <Link href="/">
-        <Li>Home</Li>
-      </Link>
-      <Link href="about">
-        <Li>About</Li>
-      </Link>
-      <Link href="contact">
-        <Li>Contact</Li>
-      </Link>
+      {sidebarData.map((item) => {
+        return (
+          <Link href={item.url}>
+            <Li> {item.name} </Li>
+          </Link>
+        );
+      })}
     </SidebarContainer>
   );
 };

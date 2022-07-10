@@ -8,7 +8,7 @@ const NavbarContainer = styled.div`
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  height: 60px;
+  height: 70px;
   padding-left: 30px;
   h2 {
     

@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import Image from "next/image";
+import { urlFor } from "../../lib/sanity";
 
 const CardContainer = styled.div`
   margin-top: 5px;
@@ -31,14 +33,10 @@ const Card = ({ item }) => {
   return (
     <CardContainer>
       <CardBody>
-        <p> {item._ref} </p>
+        <p> {item.image?.asset._ref} </p>
 
         <h3>{item.title}</h3>
-        <img
-          src="https://github.com/dailydotdev/daily/raw/master/assets/Logo%20-%20Black%20(1).jpg"
-          alt=""
-        />
-        {/* <img src={urlFor(item._ref)} alt="" /> */}
+
         <p>{item.description}</p>
         {/* <span>{item._id}</span> */}
       </CardBody>
